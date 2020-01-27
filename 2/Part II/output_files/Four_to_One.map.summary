@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Jan 20 16:32:43 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Four_to_One
+Top-level Entity Name : Four_to_One
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 0
+Total pins : 20
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

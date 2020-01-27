@@ -1,0 +1,197 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

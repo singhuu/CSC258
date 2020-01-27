@@ -1,0 +1,167 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Shantanu/Documents/Work/CSC258/2
+vFour_to_One
+Z1 !s110 1579556458
+!i10b 1
+!s100 =]o6jHMKUZ_G4hoBzZV]00
+I>Ycl@1GYLSd<^WaMnQIO62
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1579555895
+Z4 8FourToOneMux.v
+Z5 FFourToOneMux.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1579556458.000000
+Z8 !s107 FourToOneMux.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|FourToOneMux.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@four_to_@one
+vFourToOneMux
+!s110 1579330877
+!i10b 1
+!s100 YiDK6H_GX^a5Gz>Yh:IkI1
+I4;zOK_zT4FE4h3W1DZAXI2
+R2
+R0
+w1579330768
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1579330877.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@four@to@one@mux
+vmux
+!s110 1579328162
+!i10b 1
+!s100 cdR_1YenO8Tj:kQjco8Hj0
+IR>@9X`C0?ZYPT;Gz=0e8a3
+R2
+R0
+w1579306670
+8mux.v
+Fmux.v
+L0 6
+R6
+r1
+!s85 0
+31
+!s108 1579328162.000000
+!s107 mux.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|mux.v|
+!i113 1
+R10
+R11
+vmux2to1
+R1
+!i10b 1
+!s100 e?_jF8AL0L<EQ0I1Nz6D;2
+IeP]chh07N42Cl58:mhjEk2
+R2
+R0
+R3
+R4
+R5
+L0 28
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Emux4to1
+Z12 w1579325970
+Z13 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z14 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
+Z15 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z16 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
+Z17 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z18 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z19 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
+R0
+Z20 8C:/intelFPGA_lite/18.1/simulation/modelsim/4to1mux.vho
+Z21 FC:/intelFPGA_lite/18.1/simulation/modelsim/4to1mux.vho
+l0
+L36
+VzbYNCMzz49TR3BU;A_W?_2
+!s100 dEi7mHhTMDIcNNHEfJ6EJ3
+Z22 OV;C;10.5b;63
+32
+Z23 !s110 1579326279
+!i10b 1
+Z24 !s108 1579326279.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_lite/18.1/simulation/modelsim/4to1mux.vho|
+Z26 !s107 C:/intelFPGA_lite/18.1/simulation/modelsim/4to1mux.vho|
+!i113 1
+Z27 o-work work -2002 -explicit
+Z28 tExplicit 1 CvgOpt 0
+Astructure
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+DEx4 work 7 mux4to1 0 22 zbYNCMzz49TR3BU;A_W?_2
+l97
+L66
+VjXicoRJ`92OYnDmUjX^G>3
+!s100 J^MCbkE7@GzD6WDV:0iRW3
+R22
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R27
+R28
+vMux4to1PartII
+!s110 1579324612
+!i10b 1
+!s100 ggPblbjT`]JL]CiS2Y>0Q1
+I^0:=KK^o:Ecd?B1nmFMV`3
+R2
+R0
+w1579323344
+8C:/Users/Shantanu/Documents/Work/CSC258/2/Mux4to1PartII.v
+FC:/Users/Shantanu/Documents/Work/CSC258/2/Mux4to1PartII.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1579324611.000000
+!s107 C:/Users/Shantanu/Documents/Work/CSC258/2/Mux4to1PartII.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Shantanu/Documents/Work/CSC258/2/Mux4to1PartII.v|
+!i113 1
+o-work work
+R11
+n@mux4to1@part@i@i

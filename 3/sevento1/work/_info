@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Shantanu/documents/work/csc258/3/sevento1
+vsevento1
+!s110 1580163275
+!i10b 1
+!s100 >hC4^@b12;L]fFYoUzbfh2
+IaoWO=H@QUGefoJXmEMFXV1
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/Shantanu/Documents/Work/CSC258/3/sevento1
+w1580094956
+8sevento1.v
+Fsevento1.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1580163274.000000
+!s107 sevento1.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|sevento1.v|
+!i113 1
+o-timescale 1ns/1ns
+tCvgOpt 0

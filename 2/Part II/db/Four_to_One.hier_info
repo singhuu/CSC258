@@ -1,0 +1,47 @@
+|Four_to_One
+LEDR[0] <= mux2to1:block_3.m
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN2
+
+
+|Four_to_One|mux2to1:block_1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Four_to_One|mux2to1:block_2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Four_to_One|mux2to1:block_3
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

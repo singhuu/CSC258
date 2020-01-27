@@ -1,0 +1,124 @@
+|SevenHex
+HEX0[0] <= hex_0:comp0.out
+HEX0[1] <= hex_1:comp1.out
+HEX0[2] <= hex_2:comp2.out
+HEX0[3] <= hex_3:comp3.out
+HEX0[4] <= hex_4:comp4.out
+HEX0[5] <= hex_5:comp5.out
+HEX0[6] <= hex_6:comp6.out
+SW[0] => SW[0].IN7
+SW[1] => SW[1].IN7
+SW[2] => SW[2].IN7
+SW[3] => SW[3].IN7
+
+
+|SevenHex|hex_0:comp0
+i_3 => out.IN0
+i_3 => out.IN0
+i_3 => out.IN0
+i_3 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN1
+i_2 => out.IN1
+i_2 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenHex|hex_1:comp1
+i_3 => out.IN0
+i_3 => out.IN0
+i_3 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN0
+i_2 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenHex|hex_2:comp2
+i_3 => out.IN0
+i_3 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenHex|hex_3:comp3
+i_3 => out.IN0
+i_3 => out.IN0
+i_3 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenHex|hex_4:comp4
+i_3 => out.IN0
+i_3 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN0
+i_1 => out.IN1
+i_1 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenHex|hex_5:comp5
+i_3 => out.IN0
+i_3 => out.IN0
+i_3 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenHex|hex_6:comp6
+i_3 => out.IN0
+i_3 => out.IN0
+i_3 => out.IN0
+i_2 => out.IN1
+i_2 => out.IN1
+i_2 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_1 => out.IN1
+i_0 => out.IN1
+i_0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

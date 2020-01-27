@@ -1,0 +1,35 @@
+module fulladder4(LEDR,SW);
+
+	input [8:0] SW;
+	output [4:0] LEDR;
+	wire wire_1;
+	wire wire_2;
+	wire wire_3;
+	
+	FULLadder FA1(
+		.led(LEDR[0]), .c_out(wire_1), .a(SW[1]), .b(SW[5]), .c_in(SW[0])
+		);
+	
+	FULLadder FA2(
+		.led(LEDR[1]), .c_out(wire_2), .a(SW[2]), .b(SW[6]), .c_in(wire_1)
+		);
+	
+	FULLadder FA3(
+		.led(LEDR[2]), .c_out(wire_3), .a(SW[3]), .b(SW[7]), .c_in(wire_2)
+		);
+	
+	FULLadder FA4(
+		.led(LEDR[3]), .c_out(LEDR[4]), .a(SW[4]), .b(SW[8]), .c_in(wire_3)
+		);
+	
+endmodule
+
+module FULLadder(led,c_out,a,b,c_in);
+
+	input a, b, c_in;
+	output led, c_out;
+	
+	assign led = a ^ b ^ c_in;
+	assign c_out = ( a & b ) | (c_in & ( a ^ b ) );
+
+endmodule

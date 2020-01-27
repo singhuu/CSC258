@@ -1,0 +1,62 @@
+|fulladder4
+LEDR[0] <= FULLadder:FA1.led
+LEDR[1] <= FULLadder:FA2.led
+LEDR[2] <= FULLadder:FA3.led
+LEDR[3] <= FULLadder:FA4.led
+LEDR[4] <= FULLadder:FA4.c_out
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
+
+
+|fulladder4|FULLadder:FA1
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+a => led.IN0
+a => c_out.IN0
+b => led.IN1
+b => c_out.IN1
+c_in => led.IN1
+c_in => c_out.IN1
+
+
+|fulladder4|FULLadder:FA2
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+a => led.IN0
+a => c_out.IN0
+b => led.IN1
+b => c_out.IN1
+c_in => led.IN1
+c_in => c_out.IN1
+
+
+|fulladder4|FULLadder:FA3
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+a => led.IN0
+a => c_out.IN0
+b => led.IN1
+b => c_out.IN1
+c_in => led.IN1
+c_in => c_out.IN1
+
+
+|fulladder4|FULLadder:FA4
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+a => led.IN0
+a => c_out.IN0
+b => led.IN1
+b => c_out.IN1
+c_in => led.IN1
+c_in => c_out.IN1
+
+

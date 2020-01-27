@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/users/shantanu/documents/work/csc258/3/fulladder
+vFULLadder
+Z0 !s110 1580162863
+!i10b 1
+!s100 2]S9MV>Lb8Bn3K`FVCi7o2
+IQV53LC=]T8Cl>7mQzSm?@0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Shantanu/Documents/Work/CSC258/3/fulladder
+Z3 w1580004483
+Z4 8fulladder4.v
+Z5 Ffulladder4.v
+L0 27
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1580162863.000000
+Z8 !s107 fulladder4.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|fulladder4.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@f@u@l@ladder
+vfulladder4
+R0
+!i10b 1
+!s100 C6>FCAkP`;ZTSQBah1b4L1
+I^;f4I^X<@?A@<TU8dZM4H0
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

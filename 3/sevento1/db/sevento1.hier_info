@@ -1,0 +1,15 @@
+|sevento1
+SW[0] => Mux0.IN9
+SW[0] => Mux0.IN10
+SW[1] => Mux0.IN8
+SW[2] => Mux0.IN7
+SW[3] => Mux0.IN6
+SW[4] => Mux0.IN5
+SW[5] => Mux0.IN4
+SW[6] => Mux0.IN3
+SW[7] => Mux0.IN2
+SW[8] => Mux0.IN1
+SW[9] => Mux0.IN0
+LEDR[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
