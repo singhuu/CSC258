@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ALU_REG.v(8): object "OUT_0" differs only in case from object "out_0" in the same scope File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 8
+Info (10281): Verilog HDL Declaration information at ALU_REG.v(10): object "OUT_5" differs only in case from object "out_5" in the same scope File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10

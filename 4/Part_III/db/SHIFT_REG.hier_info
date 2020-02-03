@@ -1,0 +1,521 @@
+|SHIFT_REG
+SWITCH[0] => SWITCH[0].IN1
+SWITCH[1] => SWITCH[1].IN1
+SWITCH[2] => SWITCH[2].IN1
+SWITCH[3] => SWITCH[3].IN1
+SWITCH[4] => SWITCH[4].IN1
+SWITCH[5] => SWITCH[5].IN1
+SWITCH[6] => SWITCH[6].IN1
+SWITCH[7] => SWITCH[7].IN2
+SWITCH[8] => ~NO_FANOUT~
+SWITCH[9] => SWITCH[9].IN8
+KEY[0] => KEY[0].IN8
+KEY[1] => KEY[1].IN8
+KEY[2] => KEY[2].IN8
+KEY[3] => KEY[3].IN1
+LEDR[0] <= shifterBit:s7.out
+LEDR[1] <= cable[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= cable[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= cable[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= cable[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= cable[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= cable[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= cable[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|SHIFT_REG|Arith_Shifter:a0
+asr => m.OUTPUTSELECT
+first => m.DATAB
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s0
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s0|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s0|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s0|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s1
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s1|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s1|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s1|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s2
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s2|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s2|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s2|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s3
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s3|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s3|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s3|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s4
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s4|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s4|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s4|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s5
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s5|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s5|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s5|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s6
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s6|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s6|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s6|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s7
+in => in.IN1
+shift => shift.IN1
+in_val => in_val.IN1
+in_n => in_n.IN1
+clock => clock.IN1
+reset => reset.IN1
+out <= cable_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s7|FlipFlop:f0
+d[0] => q.DATAA
+d[1] => q.DATAA
+d[2] => q.DATAA
+d[3] => q.DATAA
+d[4] => q.DATAA
+d[5] => q.DATAA
+d[6] => q.DATAA
+d[7] => q.DATAA
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+CLK => q[4]~reg0.CLK
+CLK => q[5]~reg0.CLK
+CLK => q[6]~reg0.CLK
+CLK => q[7]~reg0.CLK
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s7|mux2to1:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SHIFT_REG|shifterBit:s7|mux2to1:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

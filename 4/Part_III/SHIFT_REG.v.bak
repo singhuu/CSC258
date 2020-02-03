@@ -1,0 +1,40 @@
+module shifterBit(in, shift, in_val, in_n, CLK, reset_n, out);
+	input in, shift, in_val, in_n, CLK, reset_n;
+	output out;
+	wire cable_out, cable0, cable1;
+	assign cable_out = out;
+	flipflop f0(.d(cable1), .q(out), .CLK(CLK), .reset_n(reset_n));
+	mux2to1 m1(.x(cable_out), .y(in), .s(shift), .m(cable0));
+	mux2to1 m2(.x(in_val), .y(cable0), .s(in_n), .m(cable1));
+endmodule
+
+// Taken from Part II of this lab with some minor changes
+module FlipFlop(d, CLK, reset, q);
+	input [7:0] d;
+	input CLK;
+	input reset;
+	
+	output [7:0] q;
+	
+	reg [7:0] q;
+	
+	always @(posedge CLK)
+	begin
+		if (reset == 1'b0)
+			q <= 1'd0;
+		else
+			q <= d;
+	end
+endmodule
+// Code Taken from Lab 2 Part I
+module mux2to1(x, y, s, m);
+    input x; //selected when s is 0
+    input y; //selected when s is 1
+    input s; //select signal
+    output m; //output
+  
+    assign m = s & y | ~s & x;
+    // OR
+    // assign m = s ? y : x;
+
+endmodule

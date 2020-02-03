@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Shantanu/Documents/Work/CSC258/4/Part_II
+vAdder4
+Z1 !s110 1580527197
+!i10b 1
+!s100 2U0HN=I^_;j<hbgb:lf^Z3
+ILadoRaf1kIBAh3P2=9R0:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1580525141
+Z4 8ALU_REG.v
+Z5 FALU_REG.v
+L0 143
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1580527197.000000
+Z8 !s107 ALU_REG.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|ALU_REG.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@adder4
+vALU_REG
+R1
+!i10b 1
+!s100 N6UF_[m[Xi:H6Ffeo5DdA3
+IWd02aW92fcGnfHaJl<dcA2
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@a@l@u_@r@e@g
+vD_Flip_Flop
+R1
+!i10b 1
+!s100 JT`zY0EhPb[d@P5GnHE@C3
+I1fL<b3DADdoJA`0Y?A21K1
+R2
+R0
+R3
+R4
+R5
+L0 114
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@d_@flip_@flop
+vDECODER
+R1
+!i10b 1
+!s100 GoWS5Z3b7mPh8SlWjFH?L0
+Ik`2DU`en@PN`T^<6GUX]E0
+R2
+R0
+R3
+R4
+R5
+L0 182
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@d@e@c@o@d@e@r
+vfullAdder4
+R1
+!i10b 1
+!s100 7ZIXKW9<_0Y<F;@cM3Ef53
+IDhCRT7jN8;l=_Q?7B3l>S2
+R2
+R0
+R3
+R4
+R5
+L0 133
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nfull@adder4
+vVerilogPlus
+R1
+!i10b 1
+!s100 <K[7Yic5DRaz>l0d`6W^M1
+Io[Q6j^FAbV0hjEz=[[me00
+R2
+R0
+R3
+R4
+R5
+L0 168
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@verilog@plus

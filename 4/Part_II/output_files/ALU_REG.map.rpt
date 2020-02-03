@@ -1,0 +1,390 @@
+Analysis & Synthesis report for ALU_REG
+Fri Jan 31 20:52:37 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "D_Flip_Flop:d0"
+ 10. Port Connectivity Checks: "VerilogPlus:caseone"
+ 11. Port Connectivity Checks: "Adder4:A4_2"
+ 12. Port Connectivity Checks: "Adder4:A4_1|fullAdder4:Adder_1"
+ 13. Port Connectivity Checks: "Adder4:A4_1"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Jan 31 20:52:37 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; ALU_REG                                     ;
+; Top-level Entity Name           ; ALU_REG                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 43                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C6F23I7     ;                    ;
+; Top-level entity name                                                           ; ALU_REG            ; ALU_REG            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; ALU_REG.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimate of Logic utilization (ALMs needed) ; 4               ;
+;                                             ;                 ;
+; Combinational ALUT usage for logic          ; 7               ;
+;     -- 7 input functions                    ; 0               ;
+;     -- 6 input functions                    ; 0               ;
+;     -- 5 input functions                    ; 0               ;
+;     -- 4 input functions                    ; 7               ;
+;     -- <=3 input functions                  ; 0               ;
+;                                             ;                 ;
+; Dedicated logic registers                   ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 43              ;
+;                                             ;                 ;
+; Total DSP Blocks                            ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; SWITCH[0]~input ;
+; Maximum fan-out                             ; 7               ;
+; Total fan-out                               ; 78              ;
+; Average fan-out                             ; 0.84            ;
++---------------------------------------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+; |ALU_REG                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 43   ; 0            ; |ALU_REG             ; ALU_REG     ; work         ;
+;    |DECODER:one|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_REG|DECODER:one ; DECODER     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "D_Flip_Flop:d0"                                                                        ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; q[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VerilogPlus:caseone"                                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Adder4:A4_2"                                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "Adder4:A4_1|fullAdder4:Adder_1" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; c_in ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Adder4:A4_1"                                                                           ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Y[3..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Y[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 9                           ;
+;     normal            ; 9                           ;
+;         0 data inputs ; 2                           ;
+;         4 data inputs ; 7                           ;
+; boundary_port         ; 43                          ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.85                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Jan 31 20:52:28 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_REG -c ALU_REG
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 6 design units, including 6 entities, in source file alu_reg.v
+    Info (12023): Found entity 1: ALU_REG File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 3
+    Info (12023): Found entity 2: D_Flip_Flop File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 114
+    Info (12023): Found entity 3: fullAdder4 File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 133
+    Info (12023): Found entity 4: Adder4 File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 143
+    Info (12023): Found entity 5: VerilogPlus File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 168
+    Info (12023): Found entity 6: DECODER File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 182
+Info (12127): Elaborating entity "ALU_REG" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at ALU_REG.v(38): inferring latch(es) for variable "out_7", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 38
+Warning (10240): Verilog HDL Always Construct warning at ALU_REG.v(38): inferring latch(es) for variable "out_6", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 38
+Warning (10240): Verilog HDL Always Construct warning at ALU_REG.v(38): inferring latch(es) for variable "out_5", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 38
+Warning (10240): Verilog HDL Always Construct warning at ALU_REG.v(38): inferring latch(es) for variable "out_1", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 38
+Warning (10240): Verilog HDL Always Construct warning at ALU_REG.v(38): inferring latch(es) for variable "out_0", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 38
+Info (12128): Elaborating entity "Adder4" for hierarchy "Adder4:A4_1" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 26
+Info (12128): Elaborating entity "fullAdder4" for hierarchy "Adder4:A4_1|fullAdder4:Adder_1" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 152
+Info (12128): Elaborating entity "VerilogPlus" for hierarchy "VerilogPlus:caseone" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 34
+Info (12128): Elaborating entity "D_Flip_Flop" for hierarchy "D_Flip_Flop:d0" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 98
+Info (12128): Elaborating entity "DECODER" for hierarchy "DECODER:one" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 103
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 7
+    Warning (13410): Pin "OUT_4[0]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 9
+    Warning (13410): Pin "OUT_4[1]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 9
+    Warning (13410): Pin "OUT_4[2]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 9
+    Warning (13410): Pin "OUT_4[3]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 9
+    Warning (13410): Pin "OUT_4[4]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 9
+    Warning (13410): Pin "OUT_4[5]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 9
+    Warning (13410): Pin "OUT_4[6]" is stuck at VCC File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 9
+    Warning (13410): Pin "OUT_5[0]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10
+    Warning (13410): Pin "OUT_5[1]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10
+    Warning (13410): Pin "OUT_5[2]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10
+    Warning (13410): Pin "OUT_5[3]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10
+    Warning (13410): Pin "OUT_5[4]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10
+    Warning (13410): Pin "OUT_5[5]" is stuck at GND File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10
+    Warning (13410): Pin "OUT_5[6]" is stuck at VCC File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 10
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/output_files/ALU_REG.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SWITCH[4]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 4
+    Warning (15610): No output dependent on input pin "SWITCH[5]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 4
+    Warning (15610): No output dependent on input pin "SWITCH[6]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 4
+    Warning (15610): No output dependent on input pin "SWITCH[7]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 4
+    Warning (15610): No output dependent on input pin "SWITCH[8]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 4
+    Warning (15610): No output dependent on input pin "SWITCH[9]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 4
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 5
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 5
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 5
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/ALU_REG.v Line: 5
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Fri Jan 31 20:52:37 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:17
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Shantanu/Documents/Work/CSC258/4/Part II/output_files/ALU_REG.map.smsg.
+
+
