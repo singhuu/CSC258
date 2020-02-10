@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Shantanu/Documents/Work/CSC258/5/I
+vcounter
+Z1 !s110 1581139668
+!i10b 1
+!s100 >_g>eGJl>zK>oI@Ia?he@3
+I`YXE67DM0Q?DI09JM0]Hz3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1581138767
+Z4 8counter.v
+Z5 Fcounter.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1581139668.000000
+Z8 !s107 counter.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|counter.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vDECODER
+R1
+!i10b 1
+!s100 aZAaH=09GLCc[PXDU;cWa1
+Im=_ff7VhI3XBF]P3CzYfS1
+R2
+R0
+R3
+R4
+R5
+L0 58
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@d@e@c@o@d@e@r
+vtFlip
+R1
+!i10b 1
+!s100 iin>48NJ1YQ>`Omc[J8h60
+IjC3BOH1<zbgmeP7E:[[ZM0
+R2
+R0
+R3
+R4
+R5
+L0 45
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nt@flip

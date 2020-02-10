@@ -1,0 +1,180 @@
+|counter
+SW[0] => SW[0].IN8
+SW[1] => SW[1].IN1
+KEY[0] => KEY[0].IN8
+HEX0[0] <= DECODER:H1.hex_out
+HEX0[1] <= DECODER:H1.hex_out
+HEX0[2] <= DECODER:H1.hex_out
+HEX0[3] <= DECODER:H1.hex_out
+HEX0[4] <= DECODER:H1.hex_out
+HEX0[5] <= DECODER:H1.hex_out
+HEX0[6] <= DECODER:H1.hex_out
+HEX1[0] <= DECODER:H0.hex_out
+HEX1[1] <= DECODER:H0.hex_out
+HEX1[2] <= DECODER:H0.hex_out
+HEX1[3] <= DECODER:H0.hex_out
+HEX1[4] <= DECODER:H0.hex_out
+HEX1[5] <= DECODER:H0.hex_out
+HEX1[6] <= DECODER:H0.hex_out
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6].DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= h_b[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:zero
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:one
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:two
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:three
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:four
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:five
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:six
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|tFlip:seven
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+clear_b => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|DECODER:H1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[1] => hex_out.IN0
+in[1] => hex_out.IN1
+in[1] => hex_out.IN0
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN0
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN0
+in[2] => hex_out.IN1
+in[2] => hex_out.IN0
+in[2] => hex_out.IN0
+in[2] => hex_out.IN0
+in[2] => hex_out.IN1
+in[2] => hex_out.IN0
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+hex_out[0] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|DECODER:H0
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[0] => hex_out.IN1
+in[1] => hex_out.IN0
+in[1] => hex_out.IN1
+in[1] => hex_out.IN0
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN0
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN1
+in[1] => hex_out.IN0
+in[2] => hex_out.IN1
+in[2] => hex_out.IN0
+in[2] => hex_out.IN0
+in[2] => hex_out.IN0
+in[2] => hex_out.IN1
+in[2] => hex_out.IN0
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+in[3] => hex_out.IN1
+hex_out[0] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= hex_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

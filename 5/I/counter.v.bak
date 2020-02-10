@@ -1,0 +1,80 @@
+module counter(SW, KEY, HEX0, HEX1);
+	input [9:0]SW; //Will only use SW[0] as clear_b, SW[1] as enable
+	input [3:0]KEY; //Will only use KEY[0] as clock
+	output [6:0]HEX0, HEX1;
+	wire Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0; //one bit wires representing outputs
+	wire [7:0] cable;
+	wire out6, out5, out4, out3, out2, out1, out0; //represents the outs for the ands
+	wire [3:0]lowerbits; //4 most significant bits
+	wire [3:0]higherbits; //4 least significant bits
+	output [7:0] out;
+	
+	
+	tFlip zero(.T(SW[1]), .clock(KEY[0]), .clear_b(SW[0]), .Q(out[0]));
+	assign cable[0] = SW[1] & out[0];
+	
+	tFlip one(.T(cable[0]), .clock(KEY[0]), .clear_b(SW[0]), .Q(out[1]));
+	assign cable[1] = cable[0] & out[1];
+	
+	tFlip two(.T(cable[1]), .clock(KEY[0]), .clear_b(SW[0]), .Q(out[2]));
+	assign cable[2] = cable[1] & out[2];
+	
+	tFlip three(.T(cable[2]), .clock(KEY[0]),	.clear_b(SW[0]), .Q(out[3]));
+	assign cable[3] = cable[2] & out[3];
+		
+	tFlip four(.T(cable[3]), .clock(KEY[0]), .clear_b(SW[0]), .Q(out[4]));
+	assign cable[4] = cable[3] & out[4];
+		
+	tFlip five(.T(cable[4]), .clock(KEY[0]), .clear_b(SW[0]), .Q(out[5]));
+	assign cable[5] = cable[4] & out[5];
+		
+	tFlip six(.T(cable[5]), .clock(KEY[0]), .clear_b(SW[0]), .Q(out[6]));
+	assign cable[6] = cable[5] & out[6];
+		
+	tFlip seven(.T(cable[6]),.clock(KEY[0]) .clear_b(SW[0]),	.Q(Q7));
+	
+	assign lowerbits[3:0] = {out[3], out[2], out[1], out[0]};
+	assign higherbits[3:0] = {out[7], out[6], out[5], out[4]};
+	
+	//DISPLAYING
+	seven_seg_decoder H1(
+		.bits(lowerbits[3:0]),
+		.hex(HEX0[6:0])
+	);
+		
+	seven_seg_decoder H0(
+		.bits(higherbits[3:0]),
+		.hex(HEX1[6:0])
+	);
+	
+
+endmodule
+
+module tFlip(T, clock, clear_b, Q);
+	input clock, clear_b, T;
+	output reg Q;
+	always @(posedge clock, negedge clear_b)
+	begin
+		if (clear_b == 1'b0)
+			Q <= 1'b0;
+		else if (T == 1'b1)
+			Q <= ~Q;
+	end
+endmodule
+
+
+
+//Seven augment decoder for inputs from 0-F (Hexadecimal)
+module seven_seg_decoder(bits, hex);
+	input [3:0]bits;
+	output [6:0]hex;
+	
+	assign hex[0] = (~bits[3] & ~bits[2] & ~bits[1] & bits[0]) | (~bits[3] & bits[2] & ~bits[1] & ~bits[0]) | (bits[3] & bits[2] & ~bits[1] & bits[0]) | (bits[3] & ~bits[2] & bits[1] & bits[0]);
+	assign hex[1] = (bits[3] & bits[1] & bits[0]) | (bits[2] & bits[1] & ~bits[0]) | (~bits[3] & bits[2] & ~bits[1] & bits[0]) | (bits[3] & bits[2] & ~bits[1] & ~bits[0]);
+	assign hex[2] = (bits[3] & bits[2] & bits[1]) | (~bits[3] & ~bits[2] & bits[1] & ~bits[0]) | (bits[3] & bits[2] & ~bits[1] & ~bits[0]);
+	assign hex[3] = (bits[2] & bits[1] & bits[0]) | (~bits[2] & ~bits[1] & bits[0]) | (~bits[3] & bits[2] & ~bits[1] & ~bits[0]) | (bits[3] & ~bits[2] & bits[1] & ~bits[0]);
+	assign hex[4] = (~bits[3] & bits[2] & ~bits[1]) | (~bits[2] & ~bits[1] & bits[0]) | (~bits[3] & bits[1] & bits[0]);
+	assign hex[5] = (bits[3] & bits[2] & ~bits[1] & bits[0]) | (~bits[3] & bits[1] & bits[0]) | (~bits[3] & ~bits[2] & bits[1]) | (~bits[3] & ~bits[2] & bits[0]);
+	assign hex[6] = (~bits[3] & ~bits[2] & ~bits[1]) | (bits[3] & bits[2] & ~bits[1] & ~bits[0]) | (~bits[3] & bits[2] & bits[1] & bits[0]);
+	
+endmodule
