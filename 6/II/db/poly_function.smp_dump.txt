@@ -1,0 +1,16 @@
+
+State Machine - |poly_function|part2:u0|control:C0|current_state
+Name current_state.S_CYCLE_4 current_state.S_CYCLE_3 current_state.S_CYCLE_2 current_state.S_CYCLE_1 current_state.S_CYCLE_0 current_state.S_LOAD_X_WAIT current_state.S_LOAD_X current_state.S_LOAD_C_WAIT current_state.S_LOAD_C current_state.S_LOAD_B_WAIT current_state.S_LOAD_B current_state.S_LOAD_A_WAIT current_state.S_LOAD_A 
+current_state.S_LOAD_A 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.S_LOAD_A_WAIT 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.S_LOAD_B 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.S_LOAD_B_WAIT 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.S_LOAD_C 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.S_LOAD_C_WAIT 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.S_LOAD_X 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.S_LOAD_X_WAIT 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.S_CYCLE_0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.S_CYCLE_1 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.S_CYCLE_2 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.S_CYCLE_3 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.S_CYCLE_4 1 0 0 0 0 0 0 0 0 0 0 0 1 

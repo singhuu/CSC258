@@ -1,0 +1,10 @@
+
+State Machine - |sequence_detector|y_Q
+Name y_Q.G y_Q.F y_Q.E y_Q.D y_Q.C y_Q.B y_Q.A 
+y_Q.A 0 0 0 0 0 0 0 
+y_Q.B 0 0 0 0 0 1 1 
+y_Q.C 0 0 0 0 1 0 1 
+y_Q.D 0 0 0 1 0 0 1 
+y_Q.E 0 0 1 0 0 0 1 
+y_Q.F 0 1 0 0 0 0 1 
+y_Q.G 1 0 0 0 0 0 1 

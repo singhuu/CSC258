@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Shantanu/Documents/Work/CSC258/6/I
+vsequence_detector
+!s110 1581805443
+!i10b 1
+!s100 a`>8ejV?G1Kg0=h`eAS[c3
+IZV[Wd:CbJSA<d0QS@mEmB3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1581804067
+8sequence_detector.v
+Fsequence_detector.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1581805443.000000
+!s107 sequence_detector.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|sequence_detector.v|
+!i113 1
+o-timescale 1ns/1ns
+tCvgOpt 0
