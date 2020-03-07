@@ -1,0 +1,341 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -13.797
+TNS   : -636.956
+
+Type  : Slow 1100mV 85C Model Setup 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : -1.983
+TNS   : -78.062
+
+Type  : Slow 1100mV 85C Model Setup 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : -1.865
+TNS   : -6.997
+
+Type  : Slow 1100mV 85C Model Setup 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : -1.596
+TNS   : -6.961
+
+Type  : Slow 1100mV 85C Model Setup 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : -1.576
+TNS   : -6.830
+
+Type  : Slow 1100mV 85C Model Setup 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : -1.435
+TNS   : -6.011
+
+Type  : Slow 1100mV 85C Model Setup 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : -1.388
+TNS   : -6.684
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : 0.752
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : 0.778
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : 0.794
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : 0.886
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : 0.896
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -51.159
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : -0.394
+TNS   : -24.006
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -3.085
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.675
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.620
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.578
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.574
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -14.182
+TNS   : -626.291
+
+Type  : Slow 1100mV 0C Model Setup 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : -1.940
+TNS   : -76.447
+
+Type  : Slow 1100mV 0C Model Setup 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : -1.875
+TNS   : -7.082
+
+Type  : Slow 1100mV 0C Model Setup 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : -1.577
+TNS   : -6.841
+
+Type  : Slow 1100mV 0C Model Setup 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : -1.543
+TNS   : -6.860
+
+Type  : Slow 1100mV 0C Model Setup 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : -1.449
+TNS   : -6.093
+
+Type  : Slow 1100mV 0C Model Setup 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : -1.404
+TNS   : -6.740
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : 0.726
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : 0.779
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : 0.841
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : 0.861
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -55.250
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : -0.394
+TNS   : -23.708
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -3.054
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.668
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.582
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.579
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : -0.394
+TNS   : -2.572
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -7.137
+TNS   : -364.215
+
+Type  : Fast 1100mV 85C Model Setup 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : -0.844
+TNS   : -2.814
+
+Type  : Fast 1100mV 85C Model Setup 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : -0.794
+TNS   : -30.807
+
+Type  : Fast 1100mV 85C Model Setup 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : -0.709
+TNS   : -2.770
+
+Type  : Fast 1100mV 85C Model Setup 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : -0.671
+TNS   : -2.244
+
+Type  : Fast 1100mV 85C Model Setup 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : -0.640
+TNS   : -2.599
+
+Type  : Fast 1100mV 85C Model Setup 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : -0.549
+TNS   : -2.627
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.375
+TNS   : -9.181
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : -0.002
+TNS   : -0.004
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : 0.045
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -6.707
+TNS   : -317.826
+
+Type  : Fast 1100mV 0C Model Setup 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : -0.733
+TNS   : -2.373
+
+Type  : Fast 1100mV 0C Model Setup 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : -0.692
+TNS   : -26.720
+
+Type  : Fast 1100mV 0C Model Setup 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : -0.611
+TNS   : -2.353
+
+Type  : Fast 1100mV 0C Model Setup 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : -0.558
+TNS   : -1.892
+
+Type  : Fast 1100mV 0C Model Setup 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : -0.550
+TNS   : -2.227
+
+Type  : Fast 1100mV 0C Model Setup 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : -0.468
+TNS   : -2.226
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.128
+TNS   : -0.619
+
+Type  : Fast 1100mV 0C Model Hold 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.354
+TNS   : -9.137
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'debounce:b4|timer_1ms:m0|clk_1ms'
+Slack : 0.032
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'vga_sync:vga0|clk_pixel:clk0|clk_pixel'
+Slack : 0.071
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'debounce:b2|timer_1ms:m0|clk_1ms'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'debounce:b1|timer_1ms:m0|clk_1ms'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'debounce:b0|timer_1ms:m0|clk_1ms'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'debounce:b3|timer_1ms:m0|clk_1ms'
+Slack : 0.149
+TNS   : 0.000
+
+------------------------------------------------------------

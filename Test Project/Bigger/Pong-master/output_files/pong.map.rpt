@@ -1,0 +1,267 @@
+Analysis & Synthesis report for pong
+Sun Mar 01 18:41:04 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Sun Mar 01 18:41:04 2020           ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; pong                                        ;
+; Top-level Entity Name       ; pong                                        ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; pong               ; pong               ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Mar 01 18:40:56 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pong -c pong
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 17 design units, including 17 entities, in source file pong.v
+    Info (12023): Found entity 1: font_rom File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/font_rom.v Line: 8
+    Info (12023): Found entity 2: font_test_gen File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/font_test_gen.v Line: 2
+    Info (12023): Found entity 3: font_test_top File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/font_test_top.v Line: 2
+    Info (12023): Found entity 4: m100_counter File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/m100_counter.v Line: 2
+    Info (12023): Found entity 5: pong_graph File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 2
+    Info (12023): Found entity 6: pong_text File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 2
+    Info (12023): Found entity 7: pong_top File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 2
+    Info (12023): Found entity 8: text_screen_gen File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/text_screen_gen.v Line: 2
+    Info (12023): Found entity 9: text_screen_top File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/text_screen_top.v Line: 2
+    Info (12023): Found entity 10: timer File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/timer.v Line: 2
+    Info (12023): Found entity 11: bitmap_gen File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/bitmap_gen.v Line: 2
+    Info (12023): Found entity 12: dot_top File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/dot_top.v Line: 2
+    Info (12023): Found entity 13: vga_sync File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/vga_sync.v Line: 2
+    Info (12023): Found entity 14: vga_test File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/vga_test.v Line: 2
+    Info (12023): Found entity 15: xilinx_dual_port_ram_sync File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/xilinx_dual_port_ram_sync.v Line: 5
+    Info (12023): Found entity 16: debounce File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/debounce.v Line: 2
+    Info (12023): Found entity 17: pong File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong.v Line: 18
+Info (12127): Elaborating entity "pong" for the top level hierarchy
+Info (12128): Elaborating entity "pong_top" for hierarchy "pong_top:pong" File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong.v Line: 19
+Warning (10230): Verilog HDL assignment warning at pong_top.v(96): truncated value with size 32 to match size of target (2) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 96
+Warning (10230): Verilog HDL assignment warning at pong_top.v(111): truncated value with size 32 to match size of target (2) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 111
+Warning (10230): Verilog HDL assignment warning at pong_top.v(129): truncated value with size 24 to match size of target (3) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 129
+Info (12128): Elaborating entity "vga_sync" for hierarchy "pong_top:pong|vga_sync:vsync_unit" File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 38
+Warning (10230): Verilog HDL assignment warning at vga_sync.v(68): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/vga_sync.v Line: 68
+Warning (10230): Verilog HDL assignment warning at vga_sync.v(78): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/vga_sync.v Line: 78
+Info (12128): Elaborating entity "pong_text" for hierarchy "pong_top:pong|pong_text:text_unit" File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 44
+Warning (10270): Verilog HDL Case Statement warning at pong_text.v(87): incomplete case statement has no default case item File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Warning (10240): Verilog HDL Always Construct warning at pong_text.v(87): inferring latch(es) for variable "char_addr_r", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (10041): Inferred latch for "char_addr_r[0]" at pong_text.v(87) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (10041): Inferred latch for "char_addr_r[1]" at pong_text.v(87) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (10041): Inferred latch for "char_addr_r[2]" at pong_text.v(87) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (10041): Inferred latch for "char_addr_r[3]" at pong_text.v(87) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (10041): Inferred latch for "char_addr_r[4]" at pong_text.v(87) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (10041): Inferred latch for "char_addr_r[5]" at pong_text.v(87) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (10041): Inferred latch for "char_addr_r[6]" at pong_text.v(87) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 87
+Info (12128): Elaborating entity "font_rom" for hierarchy "pong_top:pong|pong_text:text_unit|font_rom:font_unit" File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_text.v Line: 26
+Info (12128): Elaborating entity "pong_graph" for hierarchy "pong_top:pong|pong_graph:graph_unit" File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 50
+Warning (10858): Verilog HDL warning at pong_graph.v(78): object wall_on used but never assigned File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 78
+Warning (10858): Verilog HDL warning at pong_graph.v(79): object wall_rgb used but never assigned File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 79
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(144): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 144
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(155): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 155
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(158): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 158
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(160): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 160
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(192): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 192
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(205): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 205
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(206): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 206
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(209): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 209
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(215): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 215
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(217): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 217
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(229): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 229
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(232): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 232
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(234): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 234
+Warning (10240): Verilog HDL Always Construct warning at pong_graph.v(201): inferring latch(es) for variable "ball_center", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 201
+Warning (10240): Verilog HDL Always Construct warning at pong_graph.v(201): inferring latch(es) for variable "paddlel_center", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 201
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(244): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 244
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(245): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 245
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(260): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 260
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(263): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 263
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(274): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(278): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 278
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(279): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 279
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(282): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 282
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(284): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 284
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(292): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 292
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(294): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 294
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(296): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 296
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(298): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 298
+Warning (10230): Verilog HDL assignment warning at pong_graph.v(300): truncated value with size 32 to match size of target (10) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 300
+Warning (10240): Verilog HDL Always Construct warning at pong_graph.v(269): inferring latch(es) for variable "hit_point", which holds its previous value in one or more paths through the always construct File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 269
+Warning (10030): Net "wall_rgb" at pong_graph.v(79) has no driver or initial value, using a default initial value '0' File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 79
+Warning (10030): Net "wall_on" at pong_graph.v(78) has no driver or initial value, using a default initial value '0' File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 78
+Info (10041): Inferred latch for "ball_center[0]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[1]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[2]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[3]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[4]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[5]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[6]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[7]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[8]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Info (10041): Inferred latch for "ball_center[9]" at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[9]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10029): Constant driver at pong_graph.v(227) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 227
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[8]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[7]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[6]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[5]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[4]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[3]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[2]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[1]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (10028): Can't resolve multiple constant drivers for net "ball_center[0]" at pong_graph.v(274) File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_graph.v Line: 274
+Error (12152): Can't elaborate user hierarchy "pong_top:pong|pong_graph:graph_unit" File: C:/Users/Shantanu/Documents/Work/CSC258/Test Project/Bigger/Pong-master/pong_top.v Line: 50
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 12 errors, 42 warnings
+    Error: Peak virtual memory: 4786 megabytes
+    Error: Processing ended: Sun Mar 01 18:41:05 2020
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:18
+
+

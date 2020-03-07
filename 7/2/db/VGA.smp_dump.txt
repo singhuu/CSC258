@@ -1,0 +1,8 @@
+
+State Machine - |part2|control:c|current_state
+Name current_state.Y_L_WAIT current_state.Y_L_C current_state.X_L_wait current_state.X_L current_state.illus 
+current_state.X_L 0 0 0 0 0 
+current_state.X_L_wait 0 0 1 1 0 
+current_state.Y_L_C 0 1 0 1 0 
+current_state.Y_L_WAIT 1 0 0 1 0 
+current_state.illus 0 0 0 1 1 
